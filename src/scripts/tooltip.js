@@ -12,12 +12,12 @@ class Tooltip {
     this.animationConfig = {
       // Configuration for the text animations (e.g., rows sliding in/out)
       texts: {
-        duration: 0.7, 
-        ease: 'expo', 
+        duration: 0.7,
+        ease: 'expo',
       },
       // Configuration for the tooltip's scaling animations
       tooltip: {
-        duration: 0.6, 
+        duration: 0.6,
         ease: 'power4.inOut',
       },
       // Delay before starting text animations when showing the tooltip
@@ -27,7 +27,6 @@ class Tooltip {
     };
     // Animation directions for the rows
     this.rowAnimationDirections = {
-      stagename: { in: { yPercent: -100 }, out: { yPercent: -100 } }, // In and out to/from the top
       name: { in: { yPercent: 100 }, out: { yPercent: 100 } },        // In and out to/from the bottom
       field: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
       arrow: { in: { yPercent: -100 }, out: { yPercent: -100 } },     // In and out to/from the top
@@ -97,7 +96,7 @@ class Tooltip {
     this.scaleDownTimeout = setTimeout(() => {
       if (!this.hoverTarget) {
         this.scaleDownTimeline = gsap.timeline();
-        this.updateTooltip({ stagename: '', name: '', field: '' }, this.scaleDownTimeline, 'out');
+        this.updateTooltip({ name: '', field: '' }, this.scaleDownTimeline, 'out');
         this.scaleDownTimeline.to(
           this.tooltip,
           { ...this.animationConfig.tooltip, scale: 0 },
@@ -115,12 +114,11 @@ class Tooltip {
     if (this.scaleDownTimeline) this.scaleDownTimeline.kill();
     clearTimeout(this.scaleDownTimeout);
 
-    const stageName = this.hoverTarget.dataset.stagename;
     const name = this.hoverTarget.dataset.name;
     const field = this.hoverTarget.dataset.field;
 
     const updateTimeline = gsap.timeline();
-    this.updateTooltip({ stagename: stageName, name, field }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
+    this.updateTooltip({ name, field }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
   };
 
   handleMouseLeave = () => {
@@ -195,7 +193,7 @@ class Tooltip {
     // Determine animation direction
     const rowField = rowSelector.replace('[data-field="', '').replace('"]', '');
     const animationDirection = this.rowAnimationDirections[rowField] || this.rowAnimationDirections['name'];
-    
+
     // Clone animation directions to prevent GSAP mutation
     const clonedOutDirection = { ...animationDirection.out };
     const clonedInDirection = { ...animationDirection.in };
@@ -226,11 +224,10 @@ class Tooltip {
           nextSlider.textContent = newValue; // Update content
         },
       }, this.animationConfig.textsDelay); // Start after delay
-    } 
+    }
     else if (direction === 'none') {
       // Transition between images
       const transitionOutDirection = {
-        stagename: { yPercent: 100 }, // Slide down for stagename
         name: { yPercent: -100 },    // Slide up for name
         field: { yPercent: -100 },   // Slide up for field
       }[rowField] || { yPercent: 0 };
@@ -249,7 +246,7 @@ class Tooltip {
           nextSlider.textContent = newValue; // Update content
         },
       }, 0); // Start simultaneously
-    } 
+    }
     else if (direction === 'out') {
       // Tooltip disappearing
       this.rowTimelines[rowSelector].to(currentSlider, {
