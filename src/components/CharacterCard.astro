@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  character: CollectionEntry<"characters">;
+};
+
+const { character } = Astro.props;
+---
+
+<a
+  href={`/${character.id}`}
+  class="character"
+  style={`--image: url('${character.data.image.src}');`}
+  data-stagename={character.data.stage_name}
+  data-name={character.data.name}
+  data-genre={character.data.genre}
+  data-astro-prefetch
+  aria-label={character.data.name}></a>
+
+<style>
+  a {
+    background-image: var(--image);
+    background-size: cover;
+    background-position: 50% 0%;
+    aspect-ratio: 0.8;
+  }
+</style>

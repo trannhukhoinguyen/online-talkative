@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+import CharacterCard from "./CharacterCard.astro";
+import Tooltip from "./Tooltip.astro";
+
+type Props = {
+  characters: CollectionEntry<"characters">[];
+};
+
+const { characters } = Astro.props;
+const grid = "characters";
+---
+
+<section class="character-grid" id="grid" data-grid={grid}>
+  {characters.map((character) => <CharacterCard character={character} />)}
+</section>
+
+<Tooltip grid={grid} />
+
+<style>
+  section {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    margin: 1rem 0 10rem;
+    min-height: 400px;
+    @media screen and (min-width: 30em) {
+      grid-template-columns: repeat(4, calc(100% / 4));
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: repeat(7, calc(100% / 7));
+    }
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render, getEntry } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Separator from "../../../components/Separator.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all conversations from the 'conversations' collection
+  const conversations = await getCollection("conversations");
+
+  /*
+  // Filter conversations to ensure each has valid character data, then map to generate paths
+  const paths = conversations.filter(conversation => conversation.data.character && conversation.data.character.id) // Ensure the conversation has a valid character reference
+  .map((conversation) => {
+    return {
+      params: {
+        character_id: conversation.data.character.id, // Include character ID in the route parameters
+        conversation_id: conversation.id,             // Include conversation ID in the route parameters
+      },
+      props: {
+        character: conversation.data.character,      // Pass the character data as props
+        conversation                           // Pass the conversation data as props
+      },
+    };
+  });
+  */
+
+  const paths = await Promise.all(
+    conversations.map(async (conversation: any) => {
+      const character = await getEntry("characters", conversation.data.character.id); // Fetch character by ID
+      return {
+        params: {
+          character_id: conversation.data.character.id, // Include character ID in route parameters
+          conversation_id: conversation.id, // Include conversation ID in route parameters
+        },
+        props: {
+          character, // Pass full character data as props
+          conversation, // Pass conversation data as props
+        },
+      };
+    }),
+  );
+
+  // Return the generated paths for static page generation
+  return paths;
+};
+
+type Props = {
+  character: CollectionEntry<"characters">; // The character associated with the conversation
+  conversation: CollectionEntry<"conversations">; // The conversation being rendered
+};
+
+const { character, conversation } = Astro.props; // Extract character and conversation data from props
+
+// Render the content of the conversation (e.g., markdown or MDX content)
+const { Content } = await render(conversation);
+---
+
+<BaseLayout title={conversation.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {conversation.data.name}
+        <span class="faded">by {character.data.stage_name}</span>
+      </h2>
+      <div><a class="back" href={`/${character.id}`}>Back to character</a></div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={conversation.data.image.src}
+        alt={conversation.data.image.alt}
+      />
+      <div class="content">
+        <h3>Sentence List</h3>
+        <ol>
+          {conversation.data.sentences.map((sentence: any) => <li>{sentence}</li>)}
+        </ol>
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  conversation: CollectionEntry<"conversations">;
+};
+
+const { conversation } = Astro.props;
+---
+
+<a class="conversation-card" href={`/${conversation.data.character.id}/conversations/${conversation.id}`}>
+  <div>
+    <img
+      class="fade-in"
+      loading="lazy"
+      src={conversation.data.image.src}
+      alt={conversation.data.image.alt}
+    />
+  </div>
+  <h3>{conversation.data.name}</h3>
+  <p>{new Date(conversation.data.publishDate).getFullYear()}</p>
+</a>
+
+<style>
+  .conversation-card {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-content: start;
+    max-width: 300px;
+  }
+  div {
+    aspect-ratio: 1;
+    grid-area: img;
+    background: var(--color-placeholder);
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+  h3 {
+    grid-area: title;
+  }
+  p {
+    justify-self: end;
+    grid-area: meta;
+  }
+</style>

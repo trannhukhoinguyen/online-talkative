@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ConversationCard from "./ConversationCard.astro";
+
+type Props = {
+  conversations: CollectionEntry<"conversations">[];
+};
+
+const { conversations } = Astro.props;
+---
+
+<section>
+  {conversations.map((conversation) => <ConversationCard conversation={conversation} />)}
+</section>
+
+<style>
+  section {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    flex-direction: column;
+  }
+</style>

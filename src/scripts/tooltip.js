@@ -3,8 +3,8 @@ import gsap from 'gsap';
 class Tooltip {
   constructor(gridEl) {
     this.grid = gridEl;
-    this.artists = this.grid.children;
-    if (this.artists.length === 0) return;
+    this.characters = this.grid.children;
+    if (this.characters.length === 0) return;
     this.tooltip = document.querySelector('.tooltip');
     this.arrow = this.tooltip.querySelector('.tooltip__row--ra svg');
     this.OFFSET_X = 20; // Distance from cursor to left edge of tooltip
@@ -32,7 +32,7 @@ class Tooltip {
       genre: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
       arrow: { in: { yPercent: -100 }, out: { yPercent: -100 } },     // In and out to/from the top
     };
-    this.hoverTarget = null; // Tracks the currently hovered `.artist`
+    this.hoverTarget = null; // Tracks the currently hovered `.character`
     this.isTooltipVisible = false; // Tracks tooltip visibility
     this.scaleDownTimeout; // Tracks the scale-down timeout
     this.scaleDownTimeline; // Stores the tooltip scale-down timeline
@@ -57,9 +57,9 @@ class Tooltip {
     this.grid.addEventListener('mousemove', this.handleMouseMove);
     window.addEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.addEventListener('mouseenter', this.handleMouseEnter);
-      artist.addEventListener('mouseleave', this.handleMouseLeave);
+    [...this.characters].forEach(character => {
+      character.addEventListener('mouseenter', this.handleMouseEnter);
+      character.addEventListener('mouseleave', this.handleMouseLeave);
     });
   }
 
@@ -142,9 +142,9 @@ class Tooltip {
     this.grid.addEventListener('mousemove', this.handleMouseMove);
     window.addEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.addEventListener('mouseenter', this.handleMouseEnter);
-      artist.addEventListener('mouseleave', this.handleMouseLeave);
+    [...this.characters].forEach(character => {
+      character.addEventListener('mouseenter', this.handleMouseEnter);
+      character.addEventListener('mouseleave', this.handleMouseLeave);
     });
   }
 
@@ -159,9 +159,9 @@ class Tooltip {
     this.grid.removeEventListener('mousemove', this.handleMouseMove);
     window.removeEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.removeEventListener('mouseenter', this.handleMouseEnter);
-      artist.removeEventListener('mouseleave', this.handleMouseLeave);
+    [...this.characters].forEach(character => {
+      character.removeEventListener('mouseenter', this.handleMouseEnter);
+      character.removeEventListener('mouseleave', this.handleMouseLeave);
 
     });
   }

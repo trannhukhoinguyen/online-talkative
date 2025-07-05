@@ -1,12 +1,6 @@
-# Players Club: A Free Astro Template for Showcasing Music Artists
+# Talkative: A Free Astro Template for Showcasing Music Characters
 
-Players Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with [Alex Tkachev](https://alextkachev.com/).
-
-![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/02/PlayersClub_Template_featured.png)
-
-[Article on Codrops](https://tympanus.net/codrops/?p=86632)
-
-[Demo](https://playersclub88.netlify.app/)
+Talkative is a free Astro template for showcasing music characters—an experimental proof of concept built in collaboration with [Alex Tkachev](https://alextkachev.com/).
 
 ## Commands
 
@@ -21,11 +15,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-
-## Credits
-
-- Design based on [Alex Tkachev's](https://alextkachev.com/) [Players Club Dribbble shot](https://dribbble.com/shots/25156320-Players-Club-UI-Animation).
-- Images generated with [Midjourney](https://midjourney.com)
 
 ## Misc
 

@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Separator from "../components/Separator.astro";
+import ConversationGrid from "../components/ConversationGrid.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all characters from the 'characters' collection
+  const characters = await getCollection("characters");
+
+  // Map over the characters to generate paths for each character's page
+  const paths = characters.map((character: any) => {
+    return {
+      params: { character_id: character.id }, // URL parameter for the character's ID
+      props: { characters, character }, // Pass the full character and all characters as props
+    };
+  });
+
+  // Return the generated paths to Astro for static page generation
+  return paths;
+};
+
+type Props = {
+  characters: CollectionEntry<"characters">[]; // Array of all characters in the collection
+  character: CollectionEntry<"characters">; // Current character being rendered
+};
+
+const { characters, character } = Astro.props; // Extract the characters list and current character from the props
+
+// Extract the ID of the current character
+const character_id = character.id;
+
+// Find the index of the current character in the characters array
+const currentCharacterIndex = characters.findIndex((a) => a.id === character_id);
+
+// Calculate the index of the "next" character in the array (wrap around if at the last character)
+const nextCharacterIndex = (currentCharacterIndex + 1) % characters.length;
+
+// Get the "next" character based on the calculated index
+const nextCharacter = characters[nextCharacterIndex];
+
+// Fetch all conversations that belong to the current character
+const conversations = await getCollection(
+  "conversations",
+  ({ data }) => data.character.id === character_id,
+);
+
+// Render the content of the current character (e.g., markdown or MDX)
+const { Content } = await render(character);
+---
+
+<BaseLayout title={character.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {character.data.stage_name}
+        <span class="faded">({character.data.name})</span>
+      </h2>
+      <div>
+        <a class="back" href="/">View all</a>
+        <span class="faded">/</span>
+        <a href={`/${nextCharacter.id}`}>Next character</a>
+      </div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={character.data.image.src}
+        alt={character.data.image.alt}
+      />
+      <div class="content">
+        <h3>Biography</h3>
+        <Content />
+        <dl>
+          <dt>Genre</dt><dd>{character.data.genre}</dd>
+        </dl>
+      </div>
+      {
+        conversations.length > 0 && (
+          <div class="conversations">
+            <h3>Releases</h3>
+            <ConversationGrid conversations={conversations} />
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .content-wrap {
+    grid-template-areas: "img" "content" "conversations";
+    grid-template-columns: 100%;
+    @media screen and (min-width: 44em) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "img img" "content conversations";
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: 30vw 1fr 170px;
+      grid-template-areas: "img content conversations";
+    }
+  }
+  .conversations {
+    grid-area: conversations;
+  }
+  .content p:last-child {
+    margin-top: 2.5rem;
+    display: flex;
+  }
+</style>
