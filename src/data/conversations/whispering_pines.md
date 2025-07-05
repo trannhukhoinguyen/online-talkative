@@ -3,8 +3,9 @@ name: "Whispering Pines"
 image:
   src: "/images/conversations/whispering_pines.webp"
   alt: "Photography of a peaceful forest with tall pine trees silhouetted against a soft evening sky in shades of teal and gold."
-publishDate: 2025-05-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Whispering Pines"
   - "Fallen Leaves"
   - "Wanderer's Song"

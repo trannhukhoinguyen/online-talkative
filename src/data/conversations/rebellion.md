@@ -3,8 +3,9 @@ name: "Rebellion"
 image:
   src: "/images/conversations/rebellion.webp"
   alt: "An abstract conversation art design featuring a single bold red color with dynamic streaks and shapes resembling lightning and flames, symbolizing energy and defiance."
-publishDate: 2024-10-05
-tracks:
+
+topic: "Office"
+sentences:
   - "Rebellion"
   - "Flames of Freedom"
   - "Electric Hearts"

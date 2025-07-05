@@ -3,8 +3,9 @@ name: "City Lights"
 image:
   src: "/images/conversations/city_lights.webp"
   alt: "A jazz singer performing under warm streetlights in a cityscape with blurred cars and glowing signs in the background, creating an elegant and contemporary atmosphere."
-publishDate: 2024-11-22
-tracks:
+
+topic: "Office"
+sentences:
   - "City Lights"
   - "Downtown Serenade"
   - "Evening Rhythms"

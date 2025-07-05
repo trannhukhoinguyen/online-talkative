@@ -3,8 +3,9 @@ name: "Velvet Hues"
 image:
   src: "/images/conversations/velvet_hues.webp"
   alt: "A minimal symbol-based design featuring a flowing ribbon-like shape forming a heart, using black and violet colors, symbolizing love and resilience."
-publishDate: 2024-09-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Velvet Hues"
   - "Ribbon of Light"
   - "Lush Echoes"

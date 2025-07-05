@@ -2,9 +2,10 @@
 name: "Heartstrings"
 image:
   src: "/images/conversations/heartstrings.webp"
-  alt: "A glowing red heart wrapped in guitar strings, set against a textured background of earthy brown and soft gold tones, symbolizing love and music."
-publishDate: 2024-03-15
-tracks:
+  alt: "A glowing red heart wrapped in guitar strings, set against a textured background of earthy brown and soft gold tones, symbolizing love and english."
+
+topic: "Office"
+sentences:
   - "Strings of Love"
   - "Falling Again"
   - "Golden Hour"

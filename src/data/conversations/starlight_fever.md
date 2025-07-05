@@ -3,8 +3,9 @@ name: "Starlight Fever"
 image:
   src: "/images/conversations/starlight_fever.webp"
   alt: "A shimmering disco ball glowing under vibrant pink and gold lights, surrounded by subtle star patterns."
-publishDate: 2024-10-10
-tracks:
+
+topic: "Office"
+sentences:
   - "Starlight Fever"
   - "Velvet Groove"
   - "Golden Nights"

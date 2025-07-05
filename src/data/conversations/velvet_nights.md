@@ -2,9 +2,9 @@
 name: "Velvet Nights"
 image:
   src: "/images/conversations/velvet_nights.webp"
-  alt: "A retro dancefloor lit with warm golden and pink hues, with shimmering curtains in the background, featuring luna-deluxe's 'LD' logo elegantly integrated."
-publishDate: 2025-05-05
-tracks:
+
+topic: "Office"
+sentences:
   - "Velvet Nights"
   - "Shimmering Steps"
   - "Golden Horizon"

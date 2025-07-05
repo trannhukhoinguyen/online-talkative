@@ -2,9 +2,9 @@
 name: "Faded"
 image:
   src: "/images/conversations/faded.webp"
-  alt: "A dreamy, ethereal photography-based art design featuring a foggy meadow at sunrise with soft pastel hues of lavender and blue, and a faint glowing horizon."
-publishDate: 2024-11-01
-tracks:
+  alt: "A dreamy, ethereal
+topic: "Office"
+sentences:
   - "Faded"
   - "Hazy Glow"
   - "Veil of Memories"

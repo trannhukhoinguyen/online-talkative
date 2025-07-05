@@ -3,8 +3,9 @@ name: "Ethereal Currents"
 image:
   src: "/images/conversations/ethereal_currents.webp"
   alt: "Conversation cover of Ethereal Currents by Amarié, featuring abstract, atmospheric visuals with glowing light patterns."
-publishDate: 2024-05-21
-tracks:
+
+topic: "Office"
+sentences:
   - "Whispers of Light"
   - "Infinite Frequencies"
   - "Aurora’s Call"

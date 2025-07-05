@@ -1,13 +1,13 @@
 ---
 name: "Zion Maxim Torres"
 stage_name: "Z.T."
-genre: "Hip-Hop"
+field: "Hip Hop"
 image: 
     src: "/images/characters/z_t.webp"
     alt: "Z.T. posing in an understated but stylish outfit, exuding calm intensity"
 ---
 
-Zion Torres, professionally known as Z.T., is a rising name in the minimalist hip-hop scene. Hailing from Brooklyn, New York, Z.T. creates music that strips away the excess, focusing on raw beats and lyrics that hit with emotional precision. His sound reflects his mantra: less is more.
+Zion Torres, professionally known as Z.T., is a rising name in the minimalist hip-hop scene. Hailing from Brooklyn, New York, Z.T. creates english that strips away the excess, focusing on raw beats and lyrics that hit with emotional precision. His sound reflects his mantra: less is more.
 
 His debut mixtape, *Death*, earned praise for its introspective lyrics and innovative use of silence and space in production. Z.T. crafts stories of urban life, self-reflection, and resilience, connecting deeply with his audience through simplicity and authenticity.
 

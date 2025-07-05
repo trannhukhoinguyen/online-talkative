@@ -3,8 +3,9 @@ name: "Starlight Serenade"
 image:
   src: "/images/conversations/starlight_serenade.webp"
   alt: "A dreamy night sky with twinkling stars, cherry blossoms illuminated by fairy lights, and a soft glow from the horizon, evoking magic and peace."
-publishDate: 2026-09-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Celestial Dance"
   - "Starlight Serenade"
   - "Wishes on the Wind"

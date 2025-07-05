@@ -3,8 +3,9 @@ name: "Wanderer’s Rest"
 image:
   src: "/images/conversations/wanderers_rest.webp"
   alt: "A cozy cabin in the woods under a soft twilight sky, with a warm glow emanating from its windows, symbolizing tranquility and reflection."
-publishDate: 2025-09-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Sheltered Sky"
   - "Fireside Stories"
   - "Winding Roads"

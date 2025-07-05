@@ -3,8 +3,9 @@ name: "Ethereal Paths"
 image:
   src: "/images/conversations/ethereal_paths.webp"
   alt: "A winding golden path illuminated under a dreamy twilight sky, surrounded by minimalist landscapes with soft hues of blue and gold, evoking wonder and introspection."
-publishDate: 2026-03-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Twilight Trails"
   - "Ethereal Paths"
   - "Soft Horizons"

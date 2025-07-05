@@ -3,8 +3,9 @@ name: "Neon Dreams"
 image:
   src: "/images/conversations/neon_dreams.webp"
   alt: "Conversation cover of Neon Dreams by Echo Lume, featuring a glowing cityscape under a cyberpunk sky"
-publishDate: 2024-09-17
-tracks:
+
+topic: "Office"
+sentences:
   - "Cyber Glow"
   - "Pixelated Love"
   - "Neon Horizons"

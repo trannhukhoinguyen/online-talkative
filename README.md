@@ -1,6 +1,6 @@
-# Talkative: A Free Astro Template for Showcasing Music Characters
+# Talkative: A Free Astro Template for Showcasing English Characters
 
-Talkative is a free Astro template for showcasing music characters—an experimental proof of concept built in collaboration with [Alex Tkachev](https://alextkachev.com/).
+Talkative is a free Astro template for showcasing english characters—an experimental proof of concept built in collaboration with [Alex Tkachev](https://alextkachev.com/).
 
 ## Commands
 

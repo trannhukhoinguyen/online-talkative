@@ -3,8 +3,9 @@ name: "Twilight Bloom"
 image:
   src: "/images/conversations/twilight_bloom.webp"
   alt: "A peaceful evening with glowing lanterns hanging among cherry blossoms, a soft purple-pink sky, and gentle reflections in a calm pond, evoking serenity and romance."
-publishDate: 2025-05-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Lantern Light"
   - "Twilight Bloom"
   - "Reflections in You"

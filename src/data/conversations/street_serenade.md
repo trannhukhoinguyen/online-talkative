@@ -3,8 +3,9 @@ name: "Street Serenade"
 image:
   src: "/images/conversations/street_serenade.webp"
   alt: "A dynamic urban streetscape with colorful graffiti, a spotlighted microphone at the center, and a stylized 'MS' logo integrated into the graffiti."
-publishDate: 2024-08-25
-tracks:
+
+topic: "Office"
+sentences:
   - "Street Serenade"
   - "Graffiti Dreams"
   - "Echoes of the Block"

@@ -6,7 +6,7 @@ const characters = defineCollection({
   schema: z.object({
     name: z.string(),
     stage_name: z.string(),
-    genre: z.string(),
+    field: z.string(),
     image: z.object({
       src: z.string(),
       alt: z.string(),
@@ -18,12 +18,13 @@ const conversations = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/conversations" }),
   schema: z.object({
     name: z.string(),
+    topic: z.string(),
     image: z.object({
       src: z.string(),
       alt: z.string(),
     }),
-    publishDate: z.date(), // e.g. 2024-09-17
-    tracks: z.array(z.string()),
+    topic: "Office"
+sentences: z.array(z.string()),
     character: reference('characters'),
   }),
 });

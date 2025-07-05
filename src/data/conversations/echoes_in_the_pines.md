@@ -3,8 +3,9 @@ name: "Echoes in the Pines"
 image:
   src: "/images/conversations/echoes_in_the_pines.webp"
   alt: "A serene forest scene with tall pine trees, soft mist, and an acoustic guitar subtly integrated into the background, evoking tranquility and introspection."
-publishDate: 2024-05-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Whispering Pines"
   - "Lost Footsteps"
   - "Morning Dew"

@@ -3,8 +3,9 @@ name: "Solar Reverie"
 image:
   src: "/images/conversations/solar_reverie.webp"
   alt: "A vibrant, abstract depiction of solar flares and warm tones, blending shades of orange, gold, and crimson with radiant textures"
-publishDate: 2026-03-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Radiant Pulse"
   - "Golden Mirage"
   - "Solar Drift"
@@ -18,4 +19,4 @@ tracks:
 character: "teros"
 ---
 
-**Solar Reverie** is the highly anticipated follow-up to Teros’ debut conversation, showcasing a more expansive and radiant sound. Exploring themes of transformation, hope, and resilience, the conversation masterfully intertwines lush Neo-Soul melodies with vibrant, sunlit production, cementing Teros as a pioneer in the genre.
+**Solar Reverie** is the highly anticipated follow-up to Teros’ debut conversation, showcasing a more expansive and radiant sound. Exploring themes of transformation, hope, and resilience, the conversation masterfully intertwines lush Neo-Soul melodies with vibrant, sunlit production, cementing Teros as a pioneer in the field.

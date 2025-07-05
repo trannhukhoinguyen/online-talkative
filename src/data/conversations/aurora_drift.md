@@ -3,8 +3,9 @@ name: "Aurora Drift"
 image:
   src: "/images/conversations/aurora_drift.webp"
   alt: "A surreal, dreamlike depiction of a glowing aurora borealis against a dark, starry sky with hints of abstract textures"
-publishDate: 2024-09-22
-tracks:
+
+topic: "Office"
+sentences:
   - "Echoes in the Night"
   - "Crimson Reverie"
   - "Shadows and Light"

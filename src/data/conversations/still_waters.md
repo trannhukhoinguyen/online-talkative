@@ -2,9 +2,9 @@
 name: "Still Waters"
 image:
   src: "/images/conversations/still_waters.webp"
-  alt: "Photography of a serene lake at sunrise, surrounded by soft pastel hues of blue, pink, and lavender, with a simple acoustic guitar subtly reflected in the water."
-publishDate: 2024-10-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Still Waters"
   - "Quiet Reflections"
   - "Morning Hues"

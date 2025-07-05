@@ -3,8 +3,9 @@ name: "Euphoria"
 image:
   src: "/images/conversations/euphoria.webp"
   alt: "A vibrant city skyline at night glowing with neon lights in pink, blue, and purple, with a silhouette of a confident figure looking out, evoking empowerment and dynamism."
-publishDate: 2024-06-10
-tracks:
+
+topic: "Office"
+sentences:
   - "Neon Rush"
   - "Euphoria"
   - "Electric Pulse"

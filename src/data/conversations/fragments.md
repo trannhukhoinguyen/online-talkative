@@ -3,8 +3,9 @@ name: "Fragments"
 image:
   src: "/images/conversations/fragments.webp"
   alt: "An abstract conversation art design featuring shattered glass-like patterns in shades of midnight blue, silver, and teal, with faint glowing lines intersecting dynamically, evoking introspection and resilience."
-publishDate: 2025-04-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Shattered Light"
   - "Fragments"
   - "The Turning Tide"

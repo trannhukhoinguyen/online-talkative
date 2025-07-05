@@ -3,8 +3,9 @@ name: "Whispering Glades"
 image:
   src: "/images/conversations/whispering_glades.webp"
   alt: "A serene misty forest at dawn with pastel hues of green, lavender, and blue, featuring Ivy Veil's unique logo of an intertwined ivy vine with an 'IV' monogram."
-publishDate: 2024-11-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Echo Bloom"
   - "Glass Petals"
   - "Shadows of Serenity"

@@ -29,7 +29,7 @@ class Tooltip {
     this.rowAnimationDirections = {
       stagename: { in: { yPercent: -100 }, out: { yPercent: -100 } }, // In and out to/from the top
       name: { in: { yPercent: 100 }, out: { yPercent: 100 } },        // In and out to/from the bottom
-      genre: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
+      field: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
       arrow: { in: { yPercent: -100 }, out: { yPercent: -100 } },     // In and out to/from the top
     };
     this.hoverTarget = null; // Tracks the currently hovered `.character`
@@ -97,7 +97,7 @@ class Tooltip {
     this.scaleDownTimeout = setTimeout(() => {
       if (!this.hoverTarget) {
         this.scaleDownTimeline = gsap.timeline();
-        this.updateTooltip({ stagename: '', name: '', genre: '' }, this.scaleDownTimeline, 'out');
+        this.updateTooltip({ stagename: '', name: '', field: '' }, this.scaleDownTimeline, 'out');
         this.scaleDownTimeline.to(
           this.tooltip,
           { ...this.animationConfig.tooltip, scale: 0 },
@@ -117,10 +117,10 @@ class Tooltip {
 
     const stageName = this.hoverTarget.dataset.stagename;
     const name = this.hoverTarget.dataset.name;
-    const genre = this.hoverTarget.dataset.genre;
+    const field = this.hoverTarget.dataset.field;
 
     const updateTimeline = gsap.timeline();
-    this.updateTooltip({ stagename: stageName, name, genre }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
+    this.updateTooltip({ stagename: stageName, name, field }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
   };
 
   handleMouseLeave = () => {
@@ -232,7 +232,7 @@ class Tooltip {
       const transitionOutDirection = {
         stagename: { yPercent: 100 }, // Slide down for stagename
         name: { yPercent: -100 },    // Slide up for name
-        genre: { yPercent: -100 },   // Slide up for genre
+        field: { yPercent: -100 },   // Slide up for field
       }[rowField] || { yPercent: 0 };
 
       this.rowTimelines[rowSelector].to(currentSlider, {

@@ -3,8 +3,9 @@ name: "Satin Dreams"
 image:
   src: "/images/conversations/satin_dreams.webp"
   alt: "A sleek conversation cover featuring rich pink and purple satin textures illuminated by soft, dreamy light, evoking sensuality and sophistication."
-publishDate: 2025-02-14
-tracks:
+
+topic: "Office"
+sentences:
   - "Midnight Reverie"
   - "Silk & Shadows"
   - "Velvet Refrain"

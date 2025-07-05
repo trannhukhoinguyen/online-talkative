@@ -3,8 +3,9 @@ name: "Wild"
 image:
   src: "/images/conversations/wild.webp"
   alt: "An abstract conversation art design featuring bold, sweeping brushstrokes in crimson, deep violet, and gold with subtle guitar string patterns embedded, evoking raw energy and passion."
-publishDate: 2024-09-10
-tracks:
+
+topic: "Office"
+sentences:
   - "Wild"
   - "Unbound"
   - "Crimson Skies"

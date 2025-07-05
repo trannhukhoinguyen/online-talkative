@@ -1,13 +1,13 @@
 ---
 name: "Harper Lane"
 stage_name: "HARLXN"
-genre: "Electro-Pop"
+field: "Pop"
 image: 
     src: "/images/characters/harlxn.webp"
     alt: "HARLXN posing confidently with bold lighting, exuding edgy glamor"
 ---
 
-Harper Lane, known by her stage name HARLXN, is an electrifying force in the electro-pop world. Hailing from Brooklyn, New York, HARLXN’s music fuses pulsating electronic beats with sharp, rebellious lyrics that speak to empowerment and individuality.
+Harper Lane, known by her stage name HARLXN, is an electrifying force in the electro-pop world. Hailing from Brooklyn, New York, HARLXN’s english fuses pulsating electronic beats with sharp, rebellious lyrics that speak to empowerment and individuality.
 
 Her debut conversation, *Electric Velvet*, became an underground sensation, earning her a cult following for its addictive hooks and unapologetic energy. HARLXN’s sound is an explosive blend of synth-driven melodies and edgy pop anthems, inspired by icons like Robyn and Charli XCX.
 

@@ -3,8 +3,9 @@ name: "Neon Sync"
 image:
   src: "/images/conversations/neon_sync.webp"
   alt: "Glowing intersecting neon lines forming a funky geometric pattern with vibrant colors like magenta, cyan, and lime green on a dark background."
-publishDate: 2026-02-14
-tracks:
+
+topic: "Office"
+sentences:
   - "Syncopated Groove"
   - "Neon Sync"
   - "Chromatic Funk"
@@ -18,4 +19,4 @@ tracks:
 character: "frostbyte"
 ---
 
-**Neon Sync** is Frostbyte’s highly anticipated second conversation, a futuristic blend of electro-funk with vibrant, high-energy beats. Packed with bold rhythms and innovative soundscapes, this conversation cements Frostbyte as a leading force in the genre.
+**Neon Sync** is Frostbyte’s highly anticipated second conversation, a futuristic blend of electro-funk with vibrant, high-energy beats. Packed with bold rhythms and innovative soundscapes, this conversation cements Frostbyte as a leading force in the field.

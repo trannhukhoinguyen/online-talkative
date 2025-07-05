@@ -3,8 +3,9 @@ name: "Electric Velvet"
 image:
   src: "/images/conversations/electric_velvet.webp"
   alt: "A vibrant abstract design with electric blue and neon pink waves blending like velvet on a dark, pulsating background, evoking energy and edginess."
-publishDate: 2024-08-10
-tracks:
+
+topic: "Office"
+sentences:
   - "Pulse"
   - "Electric Velvet"
   - "Neon Fever"

@@ -3,8 +3,9 @@ name: "Glitter & Groove"
 image:
   src: "/images/conversations/glitter_and_groove.webp"
   alt: "A dazzling conversation cover with golden glitter swirls and a glowing disco ball at the center, radiating light and energy."
-publishDate: 2023-11-10
-tracks:
+
+topic: "Office"
+sentences:
   - "Neon Nights"
   - "Golden Hour"
   - "Disco Queen"

@@ -3,8 +3,9 @@ name: "Lucid"
 image:
   src: "/images/conversations/lucid.webp"
   alt: "An abstract conversation art design featuring gradients of pale yellow and silver with smooth, flowing waves and subtle shimmering textures."
-publishDate: 2025-05-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Lucid"
   - "Golden Reverie"
   - "Weightless Moments"

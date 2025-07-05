@@ -3,8 +3,9 @@ name: "Stellar Echoes"
 image:
   src: "/images/conversations/desi_beats_reloaded.webp"
   alt: "Illustration of a futuristic cityscape under a vibrant, starry sky with glowing neon accents, retro 1980s aesthetics, and soundwave patterns for a synthwave conversation"
-publishDate: 2022-10-03
-tracks:
+
+topic: "Office"
+sentences:
   - "Cosmic Reverie"
   - "Neon Voyage"
   - "Galactic Drift"

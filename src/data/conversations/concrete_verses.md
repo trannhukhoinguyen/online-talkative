@@ -3,8 +3,9 @@ name: "Concrete Verses"
 image:
   src: "/images/conversations/concrete_verses.webp"
   alt: "A gritty urban skyline with stylized graffiti text, a microphone embedded in the concrete, and vibrant pops of red and yellow, featuring mia-sue's 'MS' logo prominently at the top."
-publishDate: 2026-01-30
-tracks:
+
+topic: "Office"
+sentences:
   - "Concrete Verses"
   - "Echoes of Strength"
   - "The Underdog"

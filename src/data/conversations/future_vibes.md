@@ -3,8 +3,9 @@ name: "Future Vibes"
 image:
   src: "/images/conversations/future_vibes.webp"
   alt: "Minimalist intersecting lines and abstract shapes in bold orange, blue, and white, with a stylized 'K' logo featuring Afro-futuristic elements."
-publishDate: 2026-01-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Next Wave"
   - "Future Vibes"
   - "Electric Groove"

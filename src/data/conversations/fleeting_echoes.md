@@ -3,8 +3,9 @@ name: "Fleeting Echoes"
 image:
   src: "/images/conversations/fleeting_echoes.webp"
   alt: "A serene golden hour scene with soft, warm light streaming through an open window overlooking a minimalist landscape, evoking nostalgia and introspection."
-publishDate: 2024-11-01
-tracks:
+
+topic: "Office"
+sentences:
   - "Golden Light"
   - "Fleeting Echoes"
   - "Whispered Roads"

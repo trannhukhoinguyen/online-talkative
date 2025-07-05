@@ -3,8 +3,9 @@ name: "Death"
 image:
   src: "/images/conversations/death.webp"
   alt: "An abstract conversation art design featuring a stark white square against a solid black background with subtle shadow effects, reflecting minimalist simplicity."
-publishDate: 2024-12-15
-tracks:
+
+topic: "Office"
+sentences:
   - "Death"
   - "Echoes of Silence"
   - "Shadows of the City"

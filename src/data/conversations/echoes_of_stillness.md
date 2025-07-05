@@ -3,8 +3,9 @@ name: "Echoes of Stillness"
 image:
   src: "/images/conversations/echoes_of_stillness.webp"
   alt: "A tranquil lakeside scene under a twilight sky with indigos and silver tones, reflecting stars on the water, featuring Ivy Veil's unique IV ivy vine logo."
-publishDate: 2026-02-20
-tracks:
+
+topic: "Office"
+sentences:
   - "Twilight Veil"
   - "Echoes of Stillness"
   - "Silver Waves"

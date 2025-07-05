@@ -3,8 +3,9 @@ name: "Celestial Waves"
 image:
   src: "/images/conversations/celestial_waves.webp"
   alt: "Illustration for Celestial Waves featuring soft, flowing waves of color in hues of blue, purple, and pink"
-publishDate: 2025-02-14
-tracks:
+
+topic: "Office"
+sentences:
   - "Ethereal Glow"
   - "Ocean's Whisper"
   - "Starlight Drift"
