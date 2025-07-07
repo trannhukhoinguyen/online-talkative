@@ -54,9 +54,12 @@ const { Content } = await render(character);
   <section>
     <header class="title-header">
       <h2>
-        {character.data.nationality}
-        <span class="faded">({character.data.name})</span>
+        {character.data.name}
       </h2>
+      <h3>
+        <span class="faded">({character.data.nationality})</span>
+        <span class="faded">[{character.data.fields.join(', ')}]</span>
+      </h3>
       <div>
         <a class="back" href="/">View all</a>
         <span class="faded">/</span>
