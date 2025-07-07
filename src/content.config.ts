@@ -23,8 +23,7 @@ const conversations = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
-    topic: "Office"
-sentences: z.array(z.string()),
+    sentences: z.array(z.string()),
     character: reference('characters'),
   }),
 });
