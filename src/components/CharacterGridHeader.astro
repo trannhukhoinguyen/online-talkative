@@ -11,8 +11,8 @@ type Props = {
 };
 
 const { characters, charactersTotal } = Astro.props;
-const allNationalities = characters.map(character => character.data.nationality);
-const allFields = characters.map(character => character.data.fields);
+const allNationalities = characters?.map(character => character?.data?.nationality);
+const allFields = characters?.map(character => character?.data?.fields)?.flat();
 ---
 
 <header class="title-header title-header--initial">
@@ -28,10 +28,10 @@ const allFields = characters.map(character => character.data.fields);
       </button>
     </div>
     {
-      allNationalities.map(nationality => <button>{nationality}</button>)
+      allNationalities?.map(nationality => <button>{nationality}</button>)
     }
     {
-      allFields.map(field => <button>{field}</button>)
+      allFields?.map(field => <button>{field}</button>)
     }
   </div>
   <span><TextSlider content={charactersTotal} /></span>
