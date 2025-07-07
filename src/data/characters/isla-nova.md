@@ -1,7 +1,7 @@
 ---
 name: "Isla Carrington"
-stage_name: "Isla Nova"
-field: "Pop"
+nationality: "Isla Nova"
+fields: "Pop"
 image: 
     src: "/images/characters/isla_nova.webp"
     alt: "Isla Nova posing under dynamic neon lighting, radiating confidence and style"

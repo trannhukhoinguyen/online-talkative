@@ -1,7 +1,7 @@
 ---
 name: "Kwame Adom"
-stage_name: "K-Adom"
-field: "Fusion"
+nationality: "K-Adom"
+fields: "Fusion"
 image: 
     src: "/images/characters/k_adom.webp"
     alt: "K-Adom posing confidently against a vibrant pink background"

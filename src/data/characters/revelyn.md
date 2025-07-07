@@ -1,7 +1,7 @@
 ---
 name: "Sophia Delgado"
-stage_name: "Revelyn"
-field: "Rock"
+nationality: "Revelyn"
+fields: "Rock"
 image: 
     src: "/images/characters/revelyn.webp"
     alt: "Revelyn with a vintage electric guitar, radiating raw energy and characteric confidence"

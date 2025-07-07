@@ -19,4 +19,4 @@ sentences:
 character: "teros"
 ---
 
-**Solar Reverie** is the highly anticipated follow-up to Teros’ debut conversation, showcasing a more expansive and radiant sound. Exploring themes of transformation, hope, and resilience, the conversation masterfully intertwines lush Neo-Soul melodies with vibrant, sunlit production, cementing Teros as a pioneer in the field.
+**Solar Reverie** is the highly anticipated follow-up to Teros’ debut conversation, showcasing a more expansive and radiant sound. Exploring themes of transformation, hope, and resilience, the conversation masterfully intertwines lush Neo-Soul melodies with vibrant, sunlit production, cementing Teros as a pioneer in the fields.

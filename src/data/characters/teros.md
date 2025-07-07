@@ -1,13 +1,13 @@
 ---
 name: "Teros Ayhan"
-stage_name: "Teros"
-field: "Soul"
+nationality: "Teros"
+fields: "Soul"
 image: 
     src: "/images/characters/teros.webp"
     alt: "Teros in an intricate, textured jacket, exuding a mysterious and introspective aura, captured in moody, cinematic lighting"
 ---
 
-Teros Ayhan, known simply as Teros, is a rising force in the **Neo-Soul** scene, merging the field’s rich, emotional depth with the dreamy expansiveness of psychedelic sounds. With his hauntingly smooth vocals and textured production, Teros invites listeners into a soundscape that feels both timeless and otherworldly.
+Teros Ayhan, known simply as Teros, is a rising force in the **Neo-Soul** scene, merging the fields’s rich, emotional depth with the dreamy expansiveness of psychedelic sounds. With his hauntingly smooth vocals and textured production, Teros invites listeners into a soundscape that feels both timeless and otherworldly.
 
 His debut EP, *Aurora Drift*, explores themes of existential longing, love, and the pursuit of inner peace. The project draws from a wide array of influences, from the hypnotic grooves of D’Angelo to the atmospheric experimentation of Tame Impala, creating a unique and immersive listening experience.
 

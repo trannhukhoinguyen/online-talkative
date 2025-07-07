@@ -61,7 +61,7 @@ const { Content } = await render(conversation);
     <header class="title-header">
       <h2>
         {conversation.data.name}
-        <span class="faded">by {character.data.stage_name}</span>
+        <span class="faded">by {character.data.nationality}</span>
       </h2>
       <div><a class="back" href={`/${character.id}`}>Back to character</a></div>
     </header>

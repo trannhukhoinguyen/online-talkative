@@ -1,7 +1,7 @@
 ---
 name: "Imani Bishop"
-stage_name: "Zariah Bloom"
-field: "Soul"
+nationality: "Zariah Bloom"
+fields: "Soul"
 image: 
     src: "/images/characters/zariah_bloom.webp"
     alt: "Zariah Bloom with a striking profile, exuding elegance and soulful confidence"

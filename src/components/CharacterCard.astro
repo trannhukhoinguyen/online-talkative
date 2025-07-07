@@ -12,9 +12,9 @@ const { character } = Astro.props;
   href={`/${character.id}`}
   class="character"
   style={`--image: url('${character.data.image.src}');`}
-  data-field={character.data.stage_name}
+  data-nationality={character.data.nationality}
   data-name={character.data.name}
-  data-field={character.data.field}
+  data-fields={character.data.fields}
   data-astro-prefetch
   aria-label={character.data.name}></a>
 

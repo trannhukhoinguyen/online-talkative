@@ -28,7 +28,8 @@ class Tooltip {
     // Animation directions for the rows
     this.rowAnimationDirections = {
       name: { in: { yPercent: 100 }, out: { yPercent: 100 } },        // In and out to/from the bottom
-      field: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
+      fields: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
+      nationality: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
       arrow: { in: { yPercent: -100 }, out: { yPercent: -100 } },     // In and out to/from the top
     };
     this.hoverTarget = null; // Tracks the currently hovered `.character`
@@ -96,7 +97,7 @@ class Tooltip {
     this.scaleDownTimeout = setTimeout(() => {
       if (!this.hoverTarget) {
         this.scaleDownTimeline = gsap.timeline();
-        this.updateTooltip({ name: '', field: '' }, this.scaleDownTimeline, 'out');
+        this.updateTooltip({ name: '', fields: '' }, this.scaleDownTimeline, 'out');
         this.scaleDownTimeline.to(
           this.tooltip,
           { ...this.animationConfig.tooltip, scale: 0 },
@@ -115,10 +116,11 @@ class Tooltip {
     clearTimeout(this.scaleDownTimeout);
 
     const name = this.hoverTarget.dataset.name;
-    const field = this.hoverTarget.dataset.field;
+    const fields = this.hoverTarget.dataset.fields;
+    const nationality = this.hoverTarget.dataset.nationality;
 
     const updateTimeline = gsap.timeline();
-    this.updateTooltip({ name, field }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
+    this.updateTooltip({ name, fields, nationality }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
   };
 
   handleMouseLeave = () => {
@@ -166,8 +168,8 @@ class Tooltip {
 
   // Function to update all rows dynamically
   updateTooltip(values, timeline, direction) {
-    Object.entries(values).forEach(([field, newValue]) => {
-      const rowSelector = `[data-field="${field}"]`;
+    Object.entries(values).forEach(([nationality, newValue]) => {
+      const rowSelector = `[data-nationality="${nationality}"]`;
       this.updateTextSlider(rowSelector, newValue, timeline, direction);
     });
 
@@ -191,7 +193,7 @@ class Tooltip {
     const nextSlider = textSliders[inactiveIndex];
 
     // Determine animation direction
-    const rowField = rowSelector.replace('[data-field="', '').replace('"]', '');
+    const rowField = rowSelector.replace('[data-nationality="', '').replace('"]', '');
     const animationDirection = this.rowAnimationDirections[rowField] || this.rowAnimationDirections['name'];
 
     // Clone animation directions to prevent GSAP mutation
@@ -229,7 +231,8 @@ class Tooltip {
       // Transition between images
       const transitionOutDirection = {
         name: { yPercent: -100 },    // Slide up for name
-        field: { yPercent: -100 },   // Slide up for field
+        fields: { yPercent: -100 },   // Slide up for fields
+        nationality: { yPercent: -100 },   // Slide up for nationality
       }[rowField] || { yPercent: 0 };
 
       this.rowTimelines[rowSelector].to(currentSlider, {

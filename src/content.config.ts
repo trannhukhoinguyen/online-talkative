@@ -5,8 +5,8 @@ const characters = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/characters" }),
   schema: z.object({
     name: z.string(),
-    stage_name: z.string(),
-    field: z.string(),
+    nationality: z.string(),
+    fields: z.array(z.string()),
     image: z.object({
       src: z.string(),
       alt: z.string(),

@@ -1,7 +1,7 @@
 ---
 name: "Mia Sullivan"
-stage_name: "Mia Sue"
-field: "Hip Hop"
+nationality: "Mia Sue"
+fields: "Hip Hop"
 image: 
     src: "/images/characters/mia_sue.webp"
     alt: "Mia Sue performing under vibrant graffiti art"

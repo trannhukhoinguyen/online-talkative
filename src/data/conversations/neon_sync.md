@@ -19,4 +19,4 @@ sentences:
 character: "frostbyte"
 ---
 
-**Neon Sync** is Frostbyte’s highly anticipated second conversation, a futuristic blend of electro-funk with vibrant, high-energy beats. Packed with bold rhythms and innovative soundscapes, this conversation cements Frostbyte as a leading force in the field.
+**Neon Sync** is Frostbyte’s highly anticipated second conversation, a futuristic blend of electro-funk with vibrant, high-energy beats. Packed with bold rhythms and innovative soundscapes, this conversation cements Frostbyte as a leading force in the fields.

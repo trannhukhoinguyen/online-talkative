@@ -1,7 +1,7 @@
 ---
 name: "Hikaru Inoue"
-stage_name: "Hoilin"
-field: "Pop"
+nationality: "Hoilin"
+fields: "Pop"
 image: 
     src: "/images/characters/hoilin.webp"
     alt: "Hoilin performing on a brhghtly lit stage with pastel visuals"

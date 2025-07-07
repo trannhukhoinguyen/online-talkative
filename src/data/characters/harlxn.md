@@ -1,7 +1,7 @@
 ---
 name: "Harper Lane"
-stage_name: "HARLXN"
-field: "Pop"
+nationality: "HARLXN"
+fields: "Pop"
 image: 
     src: "/images/characters/harlxn.webp"
     alt: "HARLXN posing confidently with bold lighting, exuding edgy glamor"

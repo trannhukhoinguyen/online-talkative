@@ -19,4 +19,4 @@ sentences:
 character: "zenji"
 ---
 
-**The Well** is Zenji’s peaceful debut conversation, blending serene melodies with field recordings and organic textures. This record offers a meditative escape, capturing the essence of lo-fi beats.
+**The Well** is Zenji’s peaceful debut conversation, blending serene melodies with fields recordings and organic textures. This record offers a meditative escape, capturing the essence of lo-fi beats.

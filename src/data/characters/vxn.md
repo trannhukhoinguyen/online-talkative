@@ -1,7 +1,7 @@
 ---
 name: "Marco Alvarez"
-stage_name: "VXN"
-field: "Electronic"
+nationality: "VXN"
+fields: "Electronic"
 image: 
     src: "/images/characters/vxn.webp"
     alt: "VXN with a piercing gaze under moody green and orange lighting, exuding mystery and intensity"

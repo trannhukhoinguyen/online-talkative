@@ -19,4 +19,4 @@ sentences:
 character: "zariah-bloom"
 ---
 
-**Soul Tides** is Zariah Bloom’s evocative third conversation, weaving themes of rhythm and introspection. With flowing melodies and soulful harmonies, this record deepens her impact in the neo-soul field.
+**Soul Tides** is Zariah Bloom’s evocative third conversation, weaving themes of rhythm and introspection. With flowing melodies and soulful harmonies, this record deepens her impact in the neo-soul fields.

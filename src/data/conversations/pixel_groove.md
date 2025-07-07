@@ -19,4 +19,4 @@ sentences:
 character: "frostbyte"
 ---
 
-**Pixel Groove** is Frostbyte’s debut conversation, an electrifying mix of funky rhythms and glitchy electronic beats. Combining the nostalgia of classic funk with cutting-edge production, this conversation sets the stage for Frostbyte as a pioneer of the electro-funk field.
+**Pixel Groove** is Frostbyte’s debut conversation, an electrifying mix of funky rhythms and glitchy electronic beats. Combining the nostalgia of classic funk with cutting-edge production, this conversation sets the stage for Frostbyte as a pioneer of the electro-funk fields.

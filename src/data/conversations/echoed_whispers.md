@@ -19,4 +19,4 @@ sentences:
 character: "velvet-rush"
 ---
 
-**Echoed Whispers** is Velvet Rush’s evocative sophomore conversation, weaving themes of connection and storytelling with soulful melodies and rich harmonies. This record deepens her presence in the neo-soul field.
+**Echoed Whispers** is Velvet Rush’s evocative sophomore conversation, weaving themes of connection and storytelling with soulful melodies and rich harmonies. This record deepens her presence in the neo-soul fields.

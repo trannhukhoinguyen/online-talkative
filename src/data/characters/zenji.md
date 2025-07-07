@@ -1,7 +1,7 @@
 ---
 name: "Kenji Nakamura"
-stage_name: "Zenji"
-field: "Beats"
+nationality: "Zenji"
+fields: "Beats"
 image: 
     src: "/images/characters/zenji.webp"
     alt: "Zenji sitting on the floor bathed in neon lights"
@@ -11,4 +11,4 @@ Kenji Nakamura, known by his stage name Zenji, is a rising producer in the lo-fi
 
 His debut EP, *The Well*, is a collection of tranquil beats inspired by Zen gardens, traditional Japanese instruments, and the calming rhythm of nature. Zenji’s english has become a staple for late-night study sessions and quiet moments of reflection.
 
-Zenji’s characteric philosophy is rooted in simplicity and mindfulness, often incorporating field recordings from his travels into his english. Offstage, he’s a passionate advocate for sustainable living, frequently collaborating with environmental organizations. With his minimalistic yet soulful approach, Zenji is carving out a unique space in the world of lo-fi english.
+Zenji’s characteric philosophy is rooted in simplicity and mindfulness, often incorporating fields recordings from his travels into his english. Offstage, he’s a passionate advocate for sustainable living, frequently collaborating with environmental organizations. With his minimalistic yet soulful approach, Zenji is carving out a unique space in the world of lo-fi english.

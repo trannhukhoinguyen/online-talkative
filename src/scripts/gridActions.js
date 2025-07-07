@@ -73,11 +73,11 @@ const shuffleGrid = () => {
   }
 };
 
-/* Sort grid items alphabetically by 'data-field' */
+/* Sort grid items alphabetically by 'data-nationality' */
 const sortGrid = () => {
   const sortedItems = gridItems.sort((a, b) => {
-    const nameA = a.getAttribute('data-field').toLowerCase();
-    const nameB = b.getAttribute('data-field').toLowerCase();
+    const nameA = a.getAttribute('data-nationality').toLowerCase();
+    const nameB = b.getAttribute('data-nationality').toLowerCase();
     return nameA.localeCompare(nameB);
   });
   if (gridContainer) {
@@ -91,9 +91,12 @@ const filterGrid = (searchValue) => {
   const lowerCaseSearch = searchValue.toLowerCase();
   gridItems.forEach((item) => {
     const name = item.getAttribute('data-name').toLowerCase();
-    const field = item.getAttribute('data-field').toLowerCase();
+    const nationality = item.getAttribute('data-nationality').toLowerCase();
+    const fields = item.getAttribute('data-fields').map(field => field.toLowerCase());
     item.style.display =
-      name.includes(lowerCaseSearch) || field.includes(lowerCaseSearch)
+      name.includes(lowerCaseSearch)
+      || nationality.includes(lowerCaseSearch)
+      || fields.some(field => field.includes(lowerCaseSearch))
         ? ''
         : 'none';
   });

@@ -54,7 +54,7 @@ const { Content } = await render(character);
   <section>
     <header class="title-header">
       <h2>
-        {character.data.stage_name}
+        {character.data.nationality}
         <span class="faded">({character.data.name})</span>
       </h2>
       <div>
@@ -74,7 +74,8 @@ const { Content } = await render(character);
         <h3>Biography</h3>
         <Content />
         <dl>
-          <dt>Field</dt><dd>{character.data.field}</dd>
+          <dt>Nationality</dt><dd>{character.data.nationality}</dd>
+          <dt>Field</dt><dd>{character.data.fields.join(', ')}</dd>
         </dl>
       </div>
       {
