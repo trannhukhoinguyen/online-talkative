@@ -2,7 +2,7 @@
 name: "Faded"
 image:
   src: "/images/conversations/faded.webp"
-  alt: "A dreamy, ethereal"
+  alt: ""
   
 topic: "Office"
 sentences:

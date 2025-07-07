@@ -2,6 +2,7 @@
 name: "Velvet Nights"
 image:
   src: "/images/conversations/velvet_nights.webp"
+  alt: "A dreamy, ethereal"
 
 topic: "Office"
 sentences:

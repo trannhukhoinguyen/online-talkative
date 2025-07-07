@@ -2,6 +2,7 @@
 name: "Still Waters"
 image:
   src: "/images/conversations/still_waters.webp"
+  alt: ""
 
 topic: "Office"
 sentences:
