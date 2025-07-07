@@ -11,8 +11,8 @@ type Props = {
 };
 
 const { characters, charactersTotal } = Astro.props;
-const allNationalities = characters.map(character => character.nationality);
-const allFields = characters.map(character => character.field);
+const allNationalities = characters.map(character => character.data.nationality);
+const allFields = characters.map(character => character.data.fields);
 ---
 
 <header class="title-header title-header--initial">
