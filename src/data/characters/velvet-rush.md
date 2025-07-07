@@ -1,7 +1,7 @@
 ---
 name: "Sophia Nguyen"
 nationality: "Velvet Rush"
-fields: "Soul"
+fields: ["Soul"]
 image: 
     src: "/images/characters/velvet_rush.webp"
     alt: "Velvet Rush performing in a moody jazz tool, lit by golden spotlights"

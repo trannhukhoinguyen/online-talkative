@@ -1,7 +1,7 @@
 ---
 name: "Riley Cross"
 nationality: "Phoenix Halo"
-fields: "Rock"
+fields: ["Rock"]
 image: 
     src: "/images/characters/phoenix_halo.webp"
     alt: "Phoenix Halo exuding fiery confidence in a vibrant, avant-garde outfit"

@@ -1,7 +1,8 @@
 ---
 name: "Teros Ayhan"
 nationality: "Teros"
-fields: "Soul"
+
+fields: ["Soul"]
 image: 
     src: "/images/characters/teros.webp"
     alt: "Teros in an intricate, textured jacket, exuding a mysterious and introspective aura, captured in moody, cinematic lighting"

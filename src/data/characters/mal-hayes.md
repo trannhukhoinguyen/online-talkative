@@ -1,7 +1,7 @@
 ---
 name: "Malcolm Hayes"
 nationality: "Mal Hayes"
-fields: "Soul"
+fields: ["Soul"]
 image: 
     src: "/images/characters/mal_hayes.webp"
     alt: "Mal Hayes singing with a live band in a dimly lit jazz tool"

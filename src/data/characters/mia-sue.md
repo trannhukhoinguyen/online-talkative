@@ -1,7 +1,8 @@
 ---
 name: "Mia Sullivan"
 nationality: "Mia Sue"
-fields: "Hip Hop"
+
+fields: ["Hip Hop"]
 image: 
     src: "/images/characters/mia_sue.webp"
     alt: "Mia Sue performing under vibrant graffiti art"

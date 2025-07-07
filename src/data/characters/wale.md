@@ -1,7 +1,7 @@
 ---
 name: "Wyatt Monroe"
 nationality: "Wale"
-fields: "Pop"
+fields: ["Pop"]
 image: 
     src: "/images/characters/wale.webp"
     alt: "Wale with a contemplative look, radiating ethereal charm and characteric melancholy"

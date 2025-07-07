@@ -1,7 +1,7 @@
 ---
 name: "Luna Delgado"
 nationality: "Luna Deluxe"
-fields: "Pop"
+fields: ["Pop"]
 image: 
     src: "/images/characters/luna_deluxe.webp"
     alt: "Luna Deluxe holding a vinyl record, styled with bold gold accessories and a shimmering pink outfit, exuding retro glamour with a modern twist."

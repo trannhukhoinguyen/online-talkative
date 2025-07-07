@@ -1,7 +1,8 @@
 ---
 name: "Eleanor Wyatt"
 nationality: "Nora Wilde"
-fields: "Folk"
+
+fields: ["Folk"]
 image: 
     src: "/images/characters/nora_wilde.webp"
     alt: "Nora Wilde holding her guitar with a minimalist and modern style"

@@ -1,7 +1,7 @@
 ---
 name: "Bill Gate"
 nationality: "US"
-fields: "Economic"
+fields: ["Economic"]
 image: 
     src: "/images/characters/bill-gate.webp"
     alt: ""

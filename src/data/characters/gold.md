@@ -1,7 +1,7 @@
 ---
 name: "Ren Takahashi"
 nationality: "Gold"
-fields: "Pop"
+fields: ["Pop"]
 image: 
     src: "/images/characters/gold.webp"
     alt: "Gold with a soft, introspective look in a golden fur coat, exuding characteric warmth"

@@ -1,7 +1,7 @@
 ---
 name: "Kenji Nakamura"
 nationality: "Zenji"
-fields: "Beats"
+fields: ["Beats"]
 image: 
     src: "/images/characters/zenji.webp"
     alt: "Zenji sitting on the floor bathed in neon lights"

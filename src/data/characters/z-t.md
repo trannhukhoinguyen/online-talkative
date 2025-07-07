@@ -1,7 +1,7 @@
 ---
 name: "Zion Maxim Torres"
 nationality: "Z.T."
-fields: "Hip Hop"
+fields: ["Hip Hop"]
 image: 
     src: "/images/characters/z_t.webp"
     alt: "Z.T. posing in an understated but stylish outfit, exuding calm intensity"

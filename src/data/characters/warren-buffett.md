@@ -1,7 +1,7 @@
 ---
 name: "Warren Buffett"
 nationality: "US"
-fields: "Economic"
+fields: ["Economic", "Stock"]
 image: 
     src: "/images/characters/warren-buffett.webp"
     alt: ""

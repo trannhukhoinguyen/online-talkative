@@ -1,7 +1,7 @@
 ---
 name: "Samantha Reed"
 nationality: "Ivy Veil"
-fields: "Electronic"
+fields: ["Electronic"]
 image: 
     src: "/images/characters/ivy_veil.webp"
     alt: "Ivy Veil shrouded in delicate lace, radiating a mysterious and serene presence"

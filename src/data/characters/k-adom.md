@@ -1,7 +1,7 @@
 ---
 name: "Kwame Adom"
 nationality: "K-Adom"
-fields: "Fusion"
+fields: ["Fusion"]
 image: 
     src: "/images/characters/k_adom.webp"
     alt: "K-Adom posing confidently against a vibrant pink background"

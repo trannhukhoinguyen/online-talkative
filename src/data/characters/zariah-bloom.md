@@ -1,7 +1,7 @@
 ---
 name: "Imani Bishop"
 nationality: "Zariah Bloom"
-fields: "Soul"
+fields: ["Soul"]
 image: 
     src: "/images/characters/zariah_bloom.webp"
     alt: "Zariah Bloom with a striking profile, exuding elegance and soulful confidence"

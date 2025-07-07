@@ -1,7 +1,7 @@
 ---
 name: "Jamal Reeves"
 nationality: "Reevo"
-fields: "Hip Hop"
+fields: ["Hip Hop"]
 image: 
     src: "/images/characters/reevo.webp"
     alt: "Reevo gazing confidently at the camera, exuding a mix of calm and intensity"

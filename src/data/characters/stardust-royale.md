@@ -1,7 +1,7 @@
 ---
 name: "Andre Kingston"
 nationality: "Stardust Royale"
-fields: "Rock"
+fields: ["Rock"]
 image: 
     src: "/images/characters/stardust_royale.webp"
     alt: "Stardust Royale striking a powerful pose in a shimmering red suit, radiating retro glam energy"
