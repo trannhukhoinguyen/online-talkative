@@ -21,18 +21,20 @@ const allFields = Array.from(new Set(characters?.map(character => character?.dat
     <button data-sort><TextSlider content="Sort" /></button>
     <button data-shuffle><TextSlider content="Shuffle" /></button>
     <div>
-      <button data-search class="search"><TextSlider content="Search" /></button
-      >
+      <button data-search class="search"><TextSlider content="Search" /></button>
       <button data-clear class="clear hidden" aria-label="Clear search">
         <Cross width={14} height={14} />
       </button>
     </div>
-    {
-      allNationalities?.map(nationality => <button>{nationality}</button>)
-    }
-    {
-      allFields?.map(field => <button>{field}</button>)
-    }
+  </div>
+  <div>
+    <button data-refineUk>UK</button>
+    <button data-refineUs>US</button>
+  </div>
+  <div>
+    <button data-refineEconomic>Economic</button>
+    <button data-refinePolitic>Politic</button>
+    <button data-refineSoccer>Soccer</button>
   </div>
   <span><TextSlider content={charactersTotal} /></span>
 </header>

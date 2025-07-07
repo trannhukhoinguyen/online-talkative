@@ -19,6 +19,9 @@ const handleShuffleClick = () => shuffleGrid();
 // Sort grid: trigger grid sorting.
 const handleSortClick = () => sortGrid();
 
+// Refine grid: trigger grid refining.
+const handleRefineClick = (key) => refineGrid(key);
+
 // Open search dialog: show the dialog and blur the page.
 const handleSearchClick = () => {
   searchDialog.showModal();
@@ -50,10 +53,22 @@ const handleSearchInput = (e) => {
 };
 
 /* Initialize DOM elements and states */
+let refineUk;
+let refineUs;
+let refineEconomic;
+let refinePolitic;
+let refineSoccer;
 const initializeVariables = () => {
   gridContainer = document.querySelector('[data-grid]');
   gridItems = Array.from(gridContainer?.children || []);
   shuffleButton = document.querySelector('[data-shuffle]');
+
+  refineUk = document.querySelector('[data-refineUk]');
+  refineUs = document.querySelector('[data-refineUs]');
+  refineEconomic = document.querySelector('[data-refineEconomic]');
+  refinePolitic = document.querySelector('[data-refinePolitic]');
+  refineSoccer = document.querySelector('[data-refineSoccer]');
+
   sortButton = document.querySelector('[data-sort]');
   searchButton = document.querySelector('[data-search]');
   searchClearButton = document.querySelector('[data-clear]');
@@ -84,6 +99,20 @@ const sortGrid = () => {
     gridContainer.innerHTML = '';
     sortedItems.forEach((item) => gridContainer.appendChild(item));
   }
+};
+
+/* Filter grid items according to 'data-nationality' or 'data-fields */
+const refineGrid = (key) => {
+  gridItems.forEach((item) => {
+    const lowKey = key.toLowerCase();
+    const nationality = item.getAttribute('data-nationality').toLowerCase();
+    const fields = item.getAttribute('data-fields').map(field => field.toLowerCase());
+    item.style.display =
+        nationality.includes(lowKey)
+        || fields.some(field => field.includes(lowKey))
+            ? ''
+            : 'none';
+  });
 };
 
 /* Filter grid items based on the search input */
@@ -124,6 +153,13 @@ const toggleClearButton = (searchTerm = '') => {
 /* Initialize event listeners and states */
 const init = () => {
   initializeVariables();
+
+  refineUk?.addEventListener('click', handleRefineClick('Uk'));
+  refineUs?.addEventListener('click', handleRefineClick('Us'));
+  refineEconomic?.addEventListener('click', handleRefineClick('Economic'));
+  refinePolitic?.addEventListener('click', handleRefineClick('Politic'));
+  refineSoccer?.addEventListener('click', handleRefineClick('Soccer'));
+
   shuffleButton?.addEventListener('click', handleShuffleClick);
   sortButton?.addEventListener('click', handleSortClick);
   searchButton?.addEventListener('click', handleSearchClick);
@@ -135,6 +171,13 @@ const init = () => {
 
 /* Cleanup event listeners and reset variables */
 const cleanup = () => {
+
+  refineUk?.addEventListener('click', handleRefineClick);
+  refineUs?.addEventListener('click', handleRefineClick);
+  refineEconomic?.addEventListener('click', handleRefineClick);
+  refinePolitic?.addEventListener('click', handleRefineClick);
+  refineSoccer?.addEventListener('click', handleRefineClick);
+
   shuffleButton?.removeEventListener('click', handleShuffleClick);
   sortButton?.removeEventListener('click', handleSortClick);
   searchButton?.removeEventListener('click', handleSearchClick);
