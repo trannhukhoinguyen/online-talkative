@@ -1,5 +1,5 @@
 ---
-name: "Aurora Drift"
+name: "Daily Conversation"
 image:
   src: "/images/conversations/aurora_drift.webp"
   alt: "A surreal, dreamlike depiction of a glowing aurora borealis against a dark, starry sky with hints of abstract textures"
