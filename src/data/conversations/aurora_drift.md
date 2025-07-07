@@ -16,7 +16,7 @@ sentences:
   - "Phantom Glow"
   - "Eclipse Reverie"
   - "Fading Embers"
-character: "teros"
+character: "bill_gate"
 ---
 
 **Aurora Drift** is the debut EP by Neo-Soul character Teros, offering an introspective journey through textured soundscapes and soulful vocals. Blending the emotional depth of Neo-Soul with subtle psychedelic elements, the project captures the fragility of human emotion and the beauty of fleeting moments.
