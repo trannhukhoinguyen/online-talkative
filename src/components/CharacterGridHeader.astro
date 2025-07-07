@@ -3,12 +3,16 @@ import TextSlider from "../components/TextSlider.astro";
 import Separator from "../components/Separator.astro";
 import Search from "../components/Search.astro";
 import Cross from "../assets/images/cross.svg";
+import type {CollectionEntry} from "astro:content";
 
 type Props = {
   charactersTotal: number;
+  characters: CollectionEntry<"characters">[];
 };
 
-const { charactersTotal } = Astro.props;
+const { characters, charactersTotal } = Astro.props;
+const allNationalities = characters.map(character => character.nationality);
+const allFields = characters.map(character => character.field);
 ---
 
 <header class="title-header title-header--initial">
@@ -24,7 +28,10 @@ const { charactersTotal } = Astro.props;
       </button>
     </div>
     {
-
+      allNationalities.map(nationality => <button>{nationality}</button>)
+    }
+    {
+      allFields.map(field => <button>{field}</button>)
     }
   </div>
   <span><TextSlider content={charactersTotal} /></span>
