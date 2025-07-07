@@ -18,3 +18,21 @@ sentences:
   - "Fading Embers"
 character: "bill-gate"
 ---
+
+## HỎI BUỔI SÁNG
+
+### Good morning!
+
+### How are you?
+
+## HỎI BUỔI TRƯA, CHIỀU
+
+### Good afternoon!
+
+### How old are you?
+
+## HỎI BUỔI TỐI
+
+### Good evening!
+
+### Where are you from?

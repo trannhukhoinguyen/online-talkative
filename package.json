@@ -16,7 +16,10 @@
     "astro-seo": "^0.8.4",
     "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
-    "lenis": "^1.1.17"
+    "lenis": "^1.1.17",
+    "@astrojs/markdown-remark": "^6.3.2",
+    "rehype-autolink-headings": "^7.1.0",
+    "jsdom": "^26.1.0"
   },
   "devDependencies": {
     "@types/imagesloaded": "^4.1.6"
