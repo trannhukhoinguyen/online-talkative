@@ -8,14 +8,14 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   },
+  server: {
+    port: 4322,
+  },
   prefetch: true,
   site: 'https://online-talkative.vercel.app/',
   integrations: [
     sitemap()
   ],
-  experimental: {
-    svg: true,
-  },
   markdown: {
     rehypePlugins: [
       'rehype-autolink-headings',
